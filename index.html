@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>С Днём Рождения, Вика!</title>
+    <audio id="birthdayMusic" loop>
+        <source src="korni-s-dnem-rozhdenija-vika.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио элемент.
+    </audio>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header animate__animated animate__fadeIn">
+            <div class="birthday-image-container">
+                <img src="https://giga.chat/gigachat/files/public/generated/5d22a736-ee23-4d9b-ba4a-2c2bd2ef7019" alt="Вика с Днём Рождения" class="birthday-image">
+                <h1>С Днём Рождения, Викуля❤️❤️❤️</h1>
+            </div>
+            <p>Пусть этот день будет наполнен радостью и счастьем!</p>
+        </header>
+        
+        <button id="musicButton" class="music-btn">🎵 Для праздничного настроения</button>
+
+        <section id="card" class="section">
+            <h2>💕Открытка для тебя💕</h2>
+            <div class="card-container">
+                <div class="card" onclick="flipCard()">
+                    <div class="card-front">
+                        <img src="Flux_Dev_A_highly_detailed_and_realistic_birthday_scene_with_v_3.jpg" alt="Открытка">
+                        <p>💖💖💖</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>С днем рождения любимая Моська!</h3>
+                        <p>Ты самая прекрасная, милая, красивая и замечатальная на свете. Желаю тебе исполнения каждой мечты, успехов в карьере, удачи в каждом начинании и счастья. </p>
+                        <p>I LOVE YOU!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="moments" class="section">
+    <h2>⭐️Лучшие моменты с тобой⭐️</h2>
+    <div class="slideshow-container">
+        <!-- Слайды будут добавляться через JavaScript -->
+        <div class="slideshow-slides"></div>
+        <!-- Кнопки навигации -->
+        <button class="slideshow-prev">❮</button>
+        <button class="slideshow-next">❯</button>
+        <!-- Индикаторы точек -->
+        <div class="slideshow-dots"></div>
+    </div>
+</section>
+
+        <!-- А затем поздравления от близких -->
+      <section id="greetings" class="section">
+    <h2>🥳Поздравления от близких🥳</h2>
+    <div class="video-gallery">
+        <div class="video-item">
+            <video controls class="custom-video">
+                <source src="IMG_3069.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            <p>От семьи🥰</p>
+        </div>
+        <div class="video-item">
+            <video controls class="custom-video">
+                <source src="IMG_3071.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            <p>От друзей😎</p>
+        </div>
+    </div>
+</section>
+
+        <section id="gift" class="section">
+            <h2>🎁Твой подарок🎁</h2>
+            <div class="gift-container">
+                <p>Отсканируй QR-код, чтобы получить подарок!</p>
+                <img src="2025-07-29 23_40_09-QRCode Monkey — бесплатный генератор QR-кодов для создания пользовательских QR-к.png" alt="QR код подарка">
+                <p>Сюрприз ждёт тебя!</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>С любовью для Вики ❤️</p>
+        </footer>
+    </div>
+
+    <canvas id="confetti"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
